@@ -8,7 +8,7 @@ import dagger.BindsInstance
 import dagger.Component
 
 @ApplicationScope
-@Component(modules = [DataModule::class, ViewModelModule::class])
+@Component(modules = [DataModule::class, ViewModelModule::class, WorkerModule::class])
 interface AppComponent {
 
     fun inject(activity: CoinPriceListActivity)
